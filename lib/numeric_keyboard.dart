@@ -30,6 +30,7 @@ class NumericKeyboard extends StatefulWidget {
       {Key? key,
       required this.onKeyboardTap,
       this.textColor = Colors.black,
+      this.textSize = 28,
       this.rightButtonFn,
       this.rightIcon,
       this.leftButtonFn,
@@ -115,7 +116,7 @@ class _NumericKeyboardState extends State<NumericKeyboard> {
           child: Text(
             value,
             style: TextStyle(
-                fontSize: 26,
+                fontSize: widget.textSize,
                 fontWeight: FontWeight.bold,
                 color: widget.textColor),
           ),
