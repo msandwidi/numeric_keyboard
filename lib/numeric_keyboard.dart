@@ -7,6 +7,9 @@ typedef KeyboardTapCallback = void Function(String text);
 class NumericKeyboard extends StatefulWidget {
   /// Color of the text [default = Colors.black]
   final Color textColor;
+  
+   /// Size of the text [default = 28 ]
+  final int textSize;
 
   /// Display a custom right icon
   final Icon? rightIcon;
